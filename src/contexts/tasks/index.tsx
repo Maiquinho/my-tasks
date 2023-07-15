@@ -1,5 +1,5 @@
 import { PropsWithChildren, createContext, useReducer } from "react"
-import { tasksInitialState, tasksReducer } from "../../hooks/reducers/taskReducer";
+import { getTasksInitialState, tasksReducer } from "../../hooks/reducers/taskReducer";
 import { ReducerActionType } from "../../types/settingsReducer";
 import { Tasks } from "../../types/task";
 
@@ -15,7 +15,7 @@ interface TasksContextType {
 
 
 const initialTasksContext = {
-    tasks: tasksInitialState
+    tasks: getTasksInitialState()
 }
 
 const TasksContext = createContext<TasksContextType>({
