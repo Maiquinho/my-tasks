@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     './src/**/*.tsx'
   ],
@@ -28,7 +29,10 @@ export default {
       red: '#E13535',
 
       gray: {
+        900: '#0d0d0d',
+        850: '#202020',
         800: '#262627',
+        600: '#8a8a8a',
         400: '#D9D9D9',
         200: '#EEEEEE',
       },
@@ -40,6 +44,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }
 
