@@ -1,16 +1,20 @@
-import { Check } from '@phosphor-icons/react';
+import { Check } from "@phosphor-icons/react";
+import { useCheckTask } from "../../../hooks/tasks/checkTask";
 
-type inputCheckboxProps = {
-    onSwitchChange: () => void,
-    isChecked: boolean
+interface TaskItemLabelCustomCheckboxProps {
+    taskId: string;
+    done: boolean;
 }
 
-export function InputCheckboxCheckbox({ onSwitchChange, isChecked }: inputCheckboxProps) {
+export function TaskItemLabelCustomCheckbox({ taskId, done }: TaskItemLabelCustomCheckboxProps){
+
+    const { handleCheckTask } = useCheckTask(taskId, done);
+    
 
     return (
-        <div onClick={onSwitchChange}>
+        <div onClick={handleCheckTask}>
 
-            {isChecked ?
+            {done ?
 
                 <div className="bg-red p-0.5 rounded z-30 -mt-2">
                     <Check width={16} height={16} weight="bold" className="text-gray-200" />
