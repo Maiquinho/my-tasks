@@ -7,7 +7,6 @@ export function useCheckTask(taskId: string, done: boolean) {
 
     function handleCheckTask() {
 
-        // console.log(!done);
         
         dispatch({
             type: 'set_checked',
