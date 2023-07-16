@@ -4,16 +4,24 @@ This is a simple To-do List made with Reactjs.
 
 The main idea behind this project is the save user data in the browser's **Local Storage**.
 
+The layout of this app was developed on Figma based on mobile fisrt concept.
+
 ### Tested Skills 🧠
 
 - Date manipulation (JavaScript Vanilla)
 - String manipulation (JavaScript Vanilla)
-- Local Storage manipulation
+- Local Storage manipulation (JavaScript Vanilla)
+- Context API (React)
+- useReducer (React)
+- useState (React)
+- useEffect (React)
+- Custom Hooks (React)
 
 
 ### Used technologies
 
 <div style="display:inline-block">
+  <img align="center" alt="vite" height="24" width="24" src="https://vitejs.dev/logo.svg" style="margin-right:4px;">
   <img align="center" alt="reactjs" height="24" width="24" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" style="margin-right:4px;">
   <img align="center" alt="javascript" height="24" width="24" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" style="margin-right:4px;">
   <img align="center" alt="typescript" height="24" width="24" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" style="margin-right:4px;">
