@@ -28,7 +28,7 @@ export function Tasks() {
                                 <TaskItem.Root key={id}>
                                     <TaskItem.Label.Root>
                                         <TaskItem.Label.Checkbox taskId={id} done={done} />
-                                        <TaskItem.Label.Content name={name} date={date} done={done} />
+                                        <TaskItem.Label.Content id={id} name={name} date={date} done={done} />
                                         <TaskItem.Label.DefaultCheckbox isChecked={done} />
                                     </TaskItem.Label.Root>
                                     {done && (
