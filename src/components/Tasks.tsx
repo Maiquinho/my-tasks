@@ -20,7 +20,7 @@ export function Tasks() {
 
             <div className="relative">
                 <div className="absolute top-[-4px] h-4 w-full bg-gradient-to-b dark:from-gray-800 from-white z-10"></div>
-                <div className="flex flex-col items-end max-h-[225px] lg:max-h-[300px] lg:pr-8 overflow-y-scroll scrollbar-thin dark:scrollbar-thumb-gray-850 scrollbar-thumb-gray-200 lg:scrollbar-thumb-gray-400 dark:scrollbar-track-gray-800 scrollbar-track-white relative" >
+                <div className="flex flex-col items-end max-h-[225px] lg:max-h-[300px] lg:pr-8 overflow-y-scroll overflow-x-hidden scrollbar-thin dark:scrollbar-thumb-gray-850 scrollbar-thumb-gray-200 lg:scrollbar-thumb-gray-400 dark:scrollbar-track-gray-800 scrollbar-track-white relative" >
                     {tasksListItem.length > 0 ?
                         <>
                             {tasksListItem.map(({ id, name, date, done }) => (
