@@ -51,6 +51,19 @@ export function tasksReducer(state: Tasks, action: ActionType) {
                 return newState;
             }
         break;
+        case 'edit':
+            if(action.payload?.id){
+                let newState = [...state];
+                
+                newState.map(stateItem => {
+                    if(stateItem.id == action.payload?.id){ 
+                        stateItem.name = action.payload.name as string
+                    }
+                });
+                
+                return newState;
+            }
+        break;
         case 'delete':
             if (action.payload?.id) {
                 let newState = [...state];
