@@ -26,6 +26,11 @@ export function useAddTask(){
         setTaskField(e.target.value);
     }
 
+    function handleSubmitForm(e: React.FormEvent<HTMLFormElement>){
+        e.preventDefault();
+        handleTaskForm();
+    }
+
     useEffect(() => {
         localStorage.setItem('tasks', JSON.stringify(state.tasks))
     }, [state])
@@ -35,6 +40,7 @@ export function useAddTask(){
         addTaskForm,
         handleTaskForm,
         handleTaskField,
+        handleSubmitForm,
         taskField
     }
 }
